@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  .top-nav{
+    -webkit-box-shadow: 0px 8px 10px 0px  rgb(118, 118, 118)#ddd;
+    box-shadow: 0px 8px 10px 0px rgb(118, 118, 118);
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.my-bg{
+    background-color: white;
+}
+
+.body{
+    background-color: purple;
+    /* height: 3000px; */
+}
+.stick{
+    position: sticky;
+}
+
+.c-border{
+    /* border-width: 25px; */
+    border-bottom: 7px red groove;
+    /* border */
+    }
+/* .left{
+    
+    right: 0;
+} */
+
+
+.top-menu .nav-link.active{
+    box-shadow: 0px 0px 5px grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px groove black;
+    background: white;
+}
+
+.serviceBox{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.serviceBox .service-icon{
+    color: #fff;
+    background: #fff;
+    font-size: 27px;
+    line-height: 92px;
+    width: 105px;
+    height: 80px;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    position: relative;
+    clip-path: polygon(100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%, 100% 0);
+}
+.serviceBox:hover .service-icon i{
+    transform: rotateX(360deg);
+    transition: all 0.3s;
+}
+.serviceBox .service-icon:before{
+    content: "";
+    background: linear-gradient(#f47709, #e00f47);
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    clip-path: polygon(100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%, 100% 0);
+    z-index: -1;
+}
+.serviceBox .service-content{
+    background-color: #fff;
+    padding: 60px 22px 40px;
+    margin: -40px 0 -12px;
+    outline: 2px solid #e00f47;
+    outline-offset:-12px;
+}
+.serviceBox .title{
+    color: #e00f47;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+.serviceBox .description{
+    color: #444;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+.serviceBox .read-more{
+    color: #fff;
+    background: linear-gradient(to right,#f47709, #e00f47);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 160px;
+    padding: 11px 0;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.3s ease;
+}
+.serviceBox .read-more:hover{
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+.serviceBox.purple .service-icon:before{ background: linear-gradient(#1F8DCA,#CD21A9); }
+.serviceBox.purple .service-content{ outline-color: #CD21A9; }
+.serviceBox.purple .title{ color: #CD21A9; }
+.serviceBox.purple .read-more{ background: linear-gradient(to right,#1F8DCA,#CD21A9); }
+.serviceBox.pink .service-icon:before{ background: linear-gradient(#EF78BC,#DA327F); }
+.serviceBox.pink .service-content{ outline-color: #DA327F; }
+.serviceBox.pink .title{ color: #DA327F; }
+.serviceBox.pink .read-more{ background: linear-gradient(to right,#EF78BC,#DA327F); }
+.serviceBox.blue .service-icon:before{ background: linear-gradient(#0E44A6,#22A5C1); }
+.serviceBox.blue .service-content{ outline-color: #22A5C1; }
+.serviceBox.blue .title{ color: #22A5C1; }
+.serviceBox.blue .read-more{ background: linear-gradient(to right,#0E44A6,#22A5C1); }
+@media only screen and (max-width:990px){
+    .serviceBox{ margin: 0 0 30px; }
+}
+
+
+
+
+/* /// */
+
+.s-btn{
+    border-radius: 50%;
+    cursor: pointer;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid red;
+}
+.s-btn:nth-child(1):hover{
+
+    background: white;
+    color: #3258A1;
+    border:  2px solid white;
+}
+
+.s-btn:nth-child(2):hover{
+    background: white;
+    color: #F70000;
+    border:  2px solid white;
+}
+
+.s-btn:nth-child(3):hover{
+    background: white;
+    color: #2563AC;
+    border:  2px solid white;
+}
+
+.s-btn:nth-child(4):hover{
+    background: white;
+    color: #1C9CEB;
+    border:  2px solid white;
+
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 1s;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+  .headline{
+    font-family: 'Merriweather Sans', sans-serif;
+    /* font-family: 'Karla', sans-serif */
+  }
+  .para{
+    font-family: 'Karla', sans-serif;
+  }
+  /* font-family: 'Karla', sans-serif;
+font-family: 'Merriweather Sans', sans-serif; */
